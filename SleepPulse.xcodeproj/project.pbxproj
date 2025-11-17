@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0E9C96CA75F175029B33C96 /* Pods_SleepPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89862602485A6A4B135073B7 /* Pods_SleepPulse.framework */; };
+		8D8C59EF2ECB62DA006B600D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8C59EE2ECB62DA006B600D /* FirebaseAnalytics */; };
+		8D8C59F12ECB62DA006B600D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8C59F02ECB62DA006B600D /* FirebaseAuth */; };
+		8D8C59F32ECB62DA006B600D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8D8C59F22ECB62DA006B600D /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46993D787EE2846AD78B25B2 /* Pods-SleepPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepPulse.release.xcconfig"; path = "Target Support Files/Pods-SleepPulse/Pods-SleepPulse.release.xcconfig"; sourceTree = "<group>"; };
-		89862602485A6A4B135073B7 /* Pods_SleepPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD9C3B02ECAE47F00876976 /* SleepPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD9C3BD2ECAE48000876976 /* SleepPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD9C3C72ECAE48000876976 /* SleepPulseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepPulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB4C28E69AF9C3FE4B33EB02 /* Pods-SleepPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepPulse.debug.xcconfig"; path = "Target Support Files/Pods-SleepPulse/Pods-SleepPulse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -59,7 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E9C96CA75F175029B33C96 /* Pods_SleepPulse.framework in Frameworks */,
+				8D8C59EF2ECB62DA006B600D /* FirebaseAnalytics in Frameworks */,
+				8D8C59F12ECB62DA006B600D /* FirebaseAuth in Frameworks */,
+				8D8C59F32ECB62DA006B600D /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,18 +84,8 @@
 		61932A299843A452984CC65C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB4C28E69AF9C3FE4B33EB02 /* Pods-SleepPulse.debug.xcconfig */,
-				46993D787EE2846AD78B25B2 /* Pods-SleepPulse.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		67BB587B7E5C77DDC500C2C2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				89862602485A6A4B135073B7 /* Pods_SleepPulse.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8DD9C3A72ECAE47E00876976 = {
@@ -105,7 +96,6 @@
 				8DD9C3CA2ECAE48000876976 /* SleepPulseUITests */,
 				8DD9C3B12ECAE47F00876976 /* Products */,
 				61932A299843A452984CC65C /* Pods */,
-				67BB587B7E5C77DDC500C2C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,11 +116,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD9C3D12ECAE48000876976 /* Build configuration list for PBXNativeTarget "SleepPulse" */;
 			buildPhases = (
-				739AB5A68058AF7A276EF273 /* [CP] Check Pods Manifest.lock */,
 				8DD9C3AC2ECAE47F00876976 /* Sources */,
 				8DD9C3AD2ECAE47F00876976 /* Frameworks */,
 				8DD9C3AE2ECAE47F00876976 /* Resources */,
-				BCF57DEC91987619D98C779E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +206,9 @@
 			);
 			mainGroup = 8DD9C3A72ECAE47E00876976;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8D8C59ED2ECB62DA006B600D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8DD9C3B12ECAE47F00876976 /* Products */;
 			projectDirPath = "";
@@ -253,52 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		739AB5A68058AF7A276EF273 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SleepPulse-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BCF57DEC91987619D98C779E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SleepPulse/Pods-SleepPulse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SleepPulse/Pods-SleepPulse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepPulse/Pods-SleepPulse-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DD9C3AC2ECAE47F00876976 /* Sources */ = {
@@ -461,7 +406,6 @@
 		};
 		8DD9C3D22ECAE48000876976 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB4C28E69AF9C3FE4B33EB02 /* Pods-SleepPulse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,7 +442,6 @@
 		};
 		8DD9C3D32ECAE48000876976 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46993D787EE2846AD78B25B2 /* Pods-SleepPulse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -657,6 +600,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D8C59ED2ECB62DA006B600D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D8C59EE2ECB62DA006B600D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8C59ED2ECB62DA006B600D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8D8C59F02ECB62DA006B600D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8C59ED2ECB62DA006B600D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8D8C59F22ECB62DA006B600D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D8C59ED2ECB62DA006B600D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DD9C3A82ECAE47E00876976 /* Project object */;
 }
