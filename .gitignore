@@ -1,0 +1,44 @@
+# Xcode
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+xcuserdata/
+DerivedData/
+*.xccheckout
+*.moved-aside
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods - DO NOT COMMIT!
+Pods/
+
+# Firebase - SENSITIVE!
+GoogleService-Info.plist
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Personal notes
+NOTES.md
+TODO.md
+
+# Secrets
+secrets.json
+*.key
+*.pem
+
+# Environment
+.env
+.env.local
